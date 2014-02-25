@@ -1,4 +1,4 @@
-Moments
+CloudPhotos
 =======
 
 Core Data with iCloud example for  WIPJam @ MWC14.
