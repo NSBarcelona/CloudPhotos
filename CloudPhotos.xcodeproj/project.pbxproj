@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87056B1B18BB6AFE004C7D75 /* BCNCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87056B1A18BB6AFE004C7D75 /* BCNCoreDataManager.m */; };
-		87056B1E18BB6B11004C7D75 /* BCNMoment.m in Sources */ = {isa = PBXBuildFile; fileRef = 87056B1D18BB6B11004C7D75 /* BCNMoment.m */; };
-		87056B2118BB6FEA004C7D75 /* BCNMomentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87056B2018BB6FEA004C7D75 /* BCNMomentsTableViewController.m */; };
+		87056B1E18BB6B11004C7D75 /* BCNPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 87056B1D18BB6B11004C7D75 /* BCNPhoto.m */; };
+		87056B2118BB6FEA004C7D75 /* BCNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87056B2018BB6FEA004C7D75 /* BCNTableViewController.m */; };
 		87D28CCC18BB6A5E00B638FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D28CCB18BB6A5E00B638FE /* Foundation.framework */; };
 		87D28CCE18BB6A5E00B638FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D28CCD18BB6A5E00B638FE /* CoreGraphics.framework */; };
 		87D28CD018BB6A5E00B638FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D28CCF18BB6A5E00B638FE /* UIKit.framework */; };
@@ -17,30 +17,30 @@
 		87D28CD818BB6A5E00B638FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87D28CD618BB6A5E00B638FE /* InfoPlist.strings */; };
 		87D28CDA18BB6A5E00B638FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D28CD918BB6A5E00B638FE /* main.m */; };
 		87D28CDE18BB6A5E00B638FE /* BCNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D28CDD18BB6A5E00B638FE /* BCNAppDelegate.m */; };
-		87D28CE118BB6A5E00B638FE /* Moments.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D28CDF18BB6A5E00B638FE /* Moments.xcdatamodeld */; };
+		87D28CE118BB6A5E00B638FE /* CloudPhotos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D28CDF18BB6A5E00B638FE /* CloudPhotos.xcdatamodeld */; };
 		87D28CE318BB6A5E00B638FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D28CE218BB6A5E00B638FE /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87056B1918BB6AFE004C7D75 /* BCNCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNCoreDataManager.h; sourceTree = "<group>"; };
 		87056B1A18BB6AFE004C7D75 /* BCNCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNCoreDataManager.m; sourceTree = "<group>"; };
-		87056B1C18BB6B11004C7D75 /* BCNMoment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNMoment.h; sourceTree = "<group>"; };
-		87056B1D18BB6B11004C7D75 /* BCNMoment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNMoment.m; sourceTree = "<group>"; };
-		87056B1F18BB6FEA004C7D75 /* BCNMomentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNMomentsTableViewController.h; sourceTree = "<group>"; };
-		87056B2018BB6FEA004C7D75 /* BCNMomentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNMomentsTableViewController.m; sourceTree = "<group>"; };
-		87056B2218BB9CD3004C7D75 /* Moments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Moments.entitlements; sourceTree = "<group>"; };
-		87D28CC818BB6A5E00B638FE /* Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87056B1C18BB6B11004C7D75 /* BCNPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNPhoto.h; sourceTree = "<group>"; };
+		87056B1D18BB6B11004C7D75 /* BCNPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNPhoto.m; sourceTree = "<group>"; };
+		87056B1F18BB6FEA004C7D75 /* BCNTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCNTableViewController.h; sourceTree = "<group>"; };
+		87056B2018BB6FEA004C7D75 /* BCNTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCNTableViewController.m; sourceTree = "<group>"; };
+		87056B2218BB9CD3004C7D75 /* CloudPhotos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CloudPhotos.entitlements; sourceTree = "<group>"; };
+		87D28CC818BB6A5E00B638FE /* CloudPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D28CCB18BB6A5E00B638FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		87D28CCD18BB6A5E00B638FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		87D28CCF18BB6A5E00B638FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87D28CD118BB6A5E00B638FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		87D28CD518BB6A5E00B638FE /* Moments-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moments-Info.plist"; sourceTree = "<group>"; };
+		87D28CD518BB6A5E00B638FE /* CloudPhotos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudPhotos-Info.plist"; sourceTree = "<group>"; };
 		87D28CD718BB6A5E00B638FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		87D28CD918BB6A5E00B638FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		87D28CDB18BB6A5E00B638FE /* Moments-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moments-Prefix.pch"; sourceTree = "<group>"; };
+		87D28CDB18BB6A5E00B638FE /* CloudPhotos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudPhotos-Prefix.pch"; sourceTree = "<group>"; };
 		87D28CDC18BB6A5E00B638FE /* BCNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCNAppDelegate.h; sourceTree = "<group>"; };
 		87D28CDD18BB6A5E00B638FE /* BCNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCNAppDelegate.m; sourceTree = "<group>"; };
-		87D28CE018BB6A5E00B638FE /* Moments.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moments.xcdatamodel; sourceTree = "<group>"; };
+		87D28CE018BB6A5E00B638FE /* CloudPhotos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudPhotos.xcdatamodel; sourceTree = "<group>"; };
 		87D28CE218BB6A5E00B638FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		87D28CE918BB6A5E00B638FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 		87D28CBF18BB6A5E00B638FE = {
 			isa = PBXGroup;
 			children = (
-				87D28CD318BB6A5E00B638FE /* Moments */,
+				87D28CD318BB6A5E00B638FE /* CloudPhotos */,
 				87D28CCA18BB6A5E00B638FE /* Frameworks */,
 				87D28CC918BB6A5E00B638FE /* Products */,
 			);
@@ -72,7 +72,7 @@
 		87D28CC918BB6A5E00B638FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				87D28CC818BB6A5E00B638FE /* Moments.app */,
+				87D28CC818BB6A5E00B638FE /* CloudPhotos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,32 +89,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		87D28CD318BB6A5E00B638FE /* Moments */ = {
+		87D28CD318BB6A5E00B638FE /* CloudPhotos */ = {
 			isa = PBXGroup;
 			children = (
 				87D28CDC18BB6A5E00B638FE /* BCNAppDelegate.h */,
 				87D28CDD18BB6A5E00B638FE /* BCNAppDelegate.m */,
 				87056B1918BB6AFE004C7D75 /* BCNCoreDataManager.h */,
 				87056B1A18BB6AFE004C7D75 /* BCNCoreDataManager.m */,
-				87056B1C18BB6B11004C7D75 /* BCNMoment.h */,
-				87056B1D18BB6B11004C7D75 /* BCNMoment.m */,
-				87056B1F18BB6FEA004C7D75 /* BCNMomentsTableViewController.h */,
-				87056B2018BB6FEA004C7D75 /* BCNMomentsTableViewController.m */,
+				87056B1C18BB6B11004C7D75 /* BCNPhoto.h */,
+				87056B1D18BB6B11004C7D75 /* BCNPhoto.m */,
+				87056B1F18BB6FEA004C7D75 /* BCNTableViewController.h */,
+				87056B2018BB6FEA004C7D75 /* BCNTableViewController.m */,
 				87D28CE218BB6A5E00B638FE /* Images.xcassets */,
-				87056B2218BB9CD3004C7D75 /* Moments.entitlements */,
-				87D28CDF18BB6A5E00B638FE /* Moments.xcdatamodeld */,
+				87056B2218BB9CD3004C7D75 /* CloudPhotos.entitlements */,
+				87D28CDF18BB6A5E00B638FE /* CloudPhotos.xcdatamodeld */,
 				87D28CD418BB6A5E00B638FE /* Supporting Files */,
 			);
-			path = Moments;
+			path = CloudPhotos;
 			sourceTree = "<group>";
 		};
 		87D28CD418BB6A5E00B638FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				87D28CD518BB6A5E00B638FE /* Moments-Info.plist */,
+				87D28CD518BB6A5E00B638FE /* CloudPhotos-Info.plist */,
 				87D28CD618BB6A5E00B638FE /* InfoPlist.strings */,
 				87D28CD918BB6A5E00B638FE /* main.m */,
-				87D28CDB18BB6A5E00B638FE /* Moments-Prefix.pch */,
+				87D28CDB18BB6A5E00B638FE /* CloudPhotos-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		87D28CC718BB6A5E00B638FE /* Moments */ = {
+		87D28CC718BB6A5E00B638FE /* CloudPhotos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87D28CFA18BB6A5E00B638FE /* Build configuration list for PBXNativeTarget "Moments" */;
+			buildConfigurationList = 87D28CFA18BB6A5E00B638FE /* Build configuration list for PBXNativeTarget "CloudPhotos" */;
 			buildPhases = (
 				87D28CC418BB6A5E00B638FE /* Sources */,
 				87D28CC518BB6A5E00B638FE /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = Moments;
+			name = CloudPhotos;
 			productName = Moments;
-			productReference = 87D28CC818BB6A5E00B638FE /* Moments.app */;
+			productReference = 87D28CC818BB6A5E00B638FE /* CloudPhotos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 87D28CC318BB6A5E00B638FE /* Build configuration list for PBXProject "Moments" */;
+			buildConfigurationList = 87D28CC318BB6A5E00B638FE /* Build configuration list for PBXProject "CloudPhotos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -171,7 +171,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				87D28CC718BB6A5E00B638FE /* Moments */,
+				87D28CC718BB6A5E00B638FE /* CloudPhotos */,
 			);
 		};
 /* End PBXProject section */
@@ -194,9 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87056B1B18BB6AFE004C7D75 /* BCNCoreDataManager.m in Sources */,
-				87D28CE118BB6A5E00B638FE /* Moments.xcdatamodeld in Sources */,
-				87056B1E18BB6B11004C7D75 /* BCNMoment.m in Sources */,
-				87056B2118BB6FEA004C7D75 /* BCNMomentsTableViewController.m in Sources */,
+				87D28CE118BB6A5E00B638FE /* CloudPhotos.xcdatamodeld in Sources */,
+				87056B1E18BB6B11004C7D75 /* BCNPhoto.m in Sources */,
+				87056B2118BB6FEA004C7D75 /* BCNTableViewController.m in Sources */,
 				87D28CDE18BB6A5E00B638FE /* BCNAppDelegate.m in Sources */,
 				87D28CDA18BB6A5E00B638FE /* main.m in Sources */,
 			);
@@ -293,13 +293,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = Moments/Moments.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CloudPhotos/CloudPhotos.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Moments/Moments-Prefix.pch";
-				INFOPLIST_FILE = "Moments/Moments-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CloudPhotos/CloudPhotos-Prefix.pch";
+				INFOPLIST_FILE = "CloudPhotos/CloudPhotos-Info.plist";
+				PRODUCT_NAME = CloudPhotos;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,13 +310,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = Moments/Moments.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CloudPhotos/CloudPhotos.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Moments/Moments-Prefix.pch";
-				INFOPLIST_FILE = "Moments/Moments-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CloudPhotos/CloudPhotos-Prefix.pch";
+				INFOPLIST_FILE = "CloudPhotos/CloudPhotos-Info.plist";
+				PRODUCT_NAME = CloudPhotos;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		87D28CC318BB6A5E00B638FE /* Build configuration list for PBXProject "Moments" */ = {
+		87D28CC318BB6A5E00B638FE /* Build configuration list for PBXProject "CloudPhotos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87D28CF818BB6A5E00B638FE /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87D28CFA18BB6A5E00B638FE /* Build configuration list for PBXNativeTarget "Moments" */ = {
+		87D28CFA18BB6A5E00B638FE /* Build configuration list for PBXNativeTarget "CloudPhotos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				87D28CFB18BB6A5E00B638FE /* Debug */,
@@ -346,13 +346,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		87D28CDF18BB6A5E00B638FE /* Moments.xcdatamodeld */ = {
+		87D28CDF18BB6A5E00B638FE /* CloudPhotos.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				87D28CE018BB6A5E00B638FE /* Moments.xcdatamodel */,
+				87D28CE018BB6A5E00B638FE /* CloudPhotos.xcdatamodel */,
 			);
-			currentVersion = 87D28CE018BB6A5E00B638FE /* Moments.xcdatamodel */;
-			path = Moments.xcdatamodeld;
+			currentVersion = 87D28CE018BB6A5E00B638FE /* CloudPhotos.xcdatamodel */;
+			path = CloudPhotos.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -1,6 +1,6 @@
 //
 //  BCNAppDelegate.h
-//  Moments
+//  CloudPhotos
 //
 //  Created by Hermes on 24/02/14.
 //  Copyright (c) 2014 Hermes Pique. All rights reserved.

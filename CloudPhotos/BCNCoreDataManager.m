@@ -1,13 +1,13 @@
 //
 //  BCNCoreDataManager.m
-//  Moments
+//  CloudPhotos
 //
 //  Created by Hermes on 24/02/14.
 //  Copyright (c) 2014 Hermes Pique. All rights reserved.
 //
 
 #import "BCNCoreDataManager.h"
-#import "BCNMoment.h"
+#import "BCNPhoto.h"
 
 NSString *const BCNCoreDataManagerStoreWillChangeNotification = @"BCNCoreDataManagerStoreWillChange";
 NSString *const BCNCoreDataManagerStoreDidChangeNotification = @"BCNCoreDataManagerStoreDidChange";
@@ -45,18 +45,18 @@ NSString *const BCNCoreDataManagerObjectsDidChangeNotification = @"BCNCoreDataMa
     if (self)
     {
         {
-            NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Moments" withExtension:@"momd"];
+            NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CloudPhotos" withExtension:@"momd"];
             _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
         }
         NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
         {
             NSURL *documentsURL = [BCNCoreDataManager documentsDirectory];
-            NSURL *storeURL = [documentsURL URLByAppendingPathComponent:@"Moments.sqlite"];
+            NSURL *storeURL = [documentsURL URLByAppendingPathComponent:@"CloudPhotos.sqlite"];
             
             NSError *error = nil;
-            _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
+            _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_managedObjectModel];
             
-            NSDictionary *options = @{ NSPersistentStoreUbiquitousContentNameKey : @"moments" };
+            NSDictionary *options = @{ NSPersistentStoreUbiquitousContentNameKey : @"CloudPhotos" };
             
             if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                            configuration:nil
@@ -134,11 +134,11 @@ NSString *const BCNCoreDataManagerObjectsDidChangeNotification = @"BCNCoreDataMa
     });
 }
 
-#pragma mark Moments
+#pragma mark Photos
 
-- (NSArray*)fetchMoments
+- (NSArray*)fetchPhotos
 {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Moment"];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Photo"];
     NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:NSStringFromSelector(@selector(date)) ascending:NO];
     fetchRequest.sortDescriptors = @[sortDescriptor];
     NSError *error = nil;
@@ -147,12 +147,12 @@ NSString *const BCNCoreDataManagerObjectsDidChangeNotification = @"BCNCoreDataMa
     return objects;
 }
 
-- (void)insertMomentWithImage:(UIImage*)image
+- (void)insertPhotoWithImage:(UIImage*)image
 {
-    BCNMoment *moment = [NSEntityDescription insertNewObjectForEntityForName:@"Moment" inManagedObjectContext:_managedObjectContext];
+    BCNPhoto *photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photo" inManagedObjectContext:_managedObjectContext];
     NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
-    moment.imageData = imageData;
-    moment.date = [NSDate date];
+    photo.imageData = imageData;
+    photo.date = [NSDate date];
     [self saveContext];
 }
 

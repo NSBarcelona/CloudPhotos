@@ -1,14 +1,14 @@
 //
-//  BCNMoment.m
-//  Moments
+//  BCNPhoto.m
+//  CloudPhotos
 //
 //  Created by Hermes on 24/02/14.
 //  Copyright (c) 2014 Hermes Pique. All rights reserved.
 //
 
-#import "BCNMoment.h"
+#import "BCNPhoto.h"
 
-@implementation BCNMoment
+@implementation BCNPhoto
 
 @dynamic imageData;
 @dynamic date;

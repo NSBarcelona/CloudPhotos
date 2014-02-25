@@ -1,6 +1,6 @@
 //
 //  BCNAppDelegate.m
-//  Moments
+//  CloudPhotos
 //
 //  Created by Hermes on 24/02/14.
 //  Copyright (c) 2014 Hermes Pique. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "BCNAppDelegate.h"
 #import "BCNCoreDataManager.h"
-#import "BCNMomentsTableViewController.h"
+#import "BCNTableViewController.h"
 
 @implementation BCNAppDelegate
 
@@ -36,7 +36,7 @@
 
 - (void)loadRootViewController
 {
-    UIViewController *viewController = [BCNMomentsTableViewController new];
+    UIViewController *viewController = [BCNTableViewController new];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     self.window.rootViewController = navigationController;
 }

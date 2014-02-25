@@ -1,6 +1,6 @@
 //
 //  BCNCoreDataManager.h
-//  Moments
+//  CloudPhotos
 //
 //  Created by Hermes on 24/02/14.
 //  Copyright (c) 2014 Hermes Pique. All rights reserved.
@@ -20,10 +20,10 @@ extern NSString *const BCNCoreDataManagerObjectsDidChangeNotification;
 
 - (void)saveContext;
 
-#pragma mark Moments
+#pragma mark Photos
 
-- (NSArray*)fetchMoments;
+- (NSArray*)fetchPhotos;
 
-- (void)insertMomentWithImage:(UIImage*)image;
+- (void)insertPhotoWithImage:(UIImage*)image;
 
 @end

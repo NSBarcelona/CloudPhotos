@@ -1,35 +1,35 @@
 //
-//  BCNMomentsTableViewController.m
-//  Moments
+//  BCNTableViewController.m
+//  CloudPhotos
 //
 //  Created by Hermes on 24/02/14.
 //  Copyright (c) 2014 Hermes Pique. All rights reserved.
 //
 
-#import "BCNMomentsTableViewController.h"
-#import "BCNMoment.h"
+#import "BCNTableViewController.h"
+#import "BCNPhoto.h"
 #import "BCNCoreDataManager.h"
 
-static NSString *BCNMomentsTableViewControllerCellIdentifier = @"Cell";
+static NSString *BCNTableViewControllerCellIdentifier = @"Cell";
 
-@interface BCNMomentsTableViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface BCNTableViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end
 
-@implementation BCNMomentsTableViewController {
-    NSArray *_moments;
+@implementation BCNTableViewController {
+    NSArray *_photos;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = NSLocalizedString(@"Moments", @"");
+    self.title = NSLocalizedString(@"Photos", @"");
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBarButtonItem:)];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BCNMomentsTableViewControllerCellIdentifier];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BCNTableViewControllerCellIdentifier];
     
     {
         BCNCoreDataManager *manager = [BCNCoreDataManager sharedManager];
-        _moments = [manager fetchMoments];
+        _photos = [manager fetchPhotos];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(storeWillChangeNotification:) name:BCNCoreDataManagerStoreWillChangeNotification object:manager];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(objectsDidChangeNotification:) name:BCNCoreDataManagerObjectsDidChangeNotification object:manager];
     }
@@ -54,17 +54,17 @@ static NSString *BCNMomentsTableViewControllerCellIdentifier = @"Cell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _moments.count;
+    return _photos.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BCNMomentsTableViewControllerCellIdentifier forIndexPath:indexPath];
-    BCNMoment *moment = _moments[indexPath.row];
-    cell.imageView.image = moment.image;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BCNTableViewControllerCellIdentifier forIndexPath:indexPath];
+    BCNPhoto *photo = _photos[indexPath.row];
+    cell.imageView.image = photo.image;
     
     NSDateFormatter *formatter = [self relativeDateFormatter];
-    cell.textLabel.text = [formatter stringFromDate:moment.date];
+    cell.textLabel.text = [formatter stringFromDate:photo.date];
     return cell;
 }
 
@@ -74,7 +74,7 @@ static NSString *BCNMomentsTableViewControllerCellIdentifier = @"Cell";
 {
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [self dismissViewControllerAnimated:YES completion:nil];
-    [[BCNCoreDataManager sharedManager] insertMomentWithImage:image];
+    [[BCNCoreDataManager sharedManager] insertPhotoWithImage:image];
 }
 
 #pragma mark Notifications
@@ -88,7 +88,7 @@ static NSString *BCNMomentsTableViewControllerCellIdentifier = @"Cell";
 
 - (void)objectsDidChangeNotification:(NSNotification*)notification
 {
-    _moments = [[BCNCoreDataManager sharedManager] fetchMoments];
+    _photos = [[BCNCoreDataManager sharedManager] fetchPhotos];
     [self.tableView reloadData];
 }
 

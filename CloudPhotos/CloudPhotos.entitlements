@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
-		<string>$(TeamIdentifierPrefix)com.nsbarcelona.Moments</string>
+		<string>$(TeamIdentifierPrefix)com.nsbarcelona.CloudPhotos</string>
 	</array>
 </dict>
 </plist>
